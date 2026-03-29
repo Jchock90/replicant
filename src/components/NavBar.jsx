@@ -18,13 +18,13 @@ const Navbar = () => {
     i18n.changeLanguage(lng);
   };
 
-  const words = ['JESÚS MANSILLA', 'REPLICANT', 'FLOW MY TEARS'];
+  const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="bg-darkGray bg-opacity-80 p-4 fixed w-full z-10">
+    <nav className="bg-darkGray bg-opacity-80 backdrop-blur-sm p-4 fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-gray-300 text-2xl font-bold text-opacity-90">
-          <Typewriter words={words} />
+          <Typewriter />
         </Link>
         <div className="hidden md:flex space-x-6 items-center">
           <Link to="/" className="text-lightGray hover:text-violet transition">{t('Galería')}</Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-lightGray focus:outline-none">
+          <button onClick={toggleMenu} className="text-lightGray focus:outline-none" aria-label="Toggle menu">
             {isOpen ? '✖' : '☰'}
           </button>
         </div>
@@ -51,10 +51,10 @@ const Navbar = () => {
 
       {isOpen && (
         <div className="md:hidden flex justify-center items-center space-x-2 mt-2">
-          <Link to="/" className="text-lightGray hover:text-violet transition text-sm">{t('Galería')}</Link>
-          <Link to="/audio" className="text-lightGray hover:text-violet transition text-sm">{t('Audio')}</Link>
-          <Link to="/soundtrack" className="text-lightGray hover:text-violet transition text-sm">{t('Soundtrack')}</Link>
-          <Link to="/contact" className="text-lightGray hover:text-violet transition text-sm">{t('Contacto')}</Link>
+          <Link to="/" onClick={closeMenu} className="text-lightGray hover:text-violet transition text-sm">{t('Galería')}</Link>
+          <Link to="/audio" onClick={closeMenu} className="text-lightGray hover:text-violet transition text-sm">{t('Audio')}</Link>
+          <Link to="/soundtrack" onClick={closeMenu} className="text-lightGray hover:text-violet transition text-sm">{t('Soundtrack')}</Link>
+          <Link to="/contact" onClick={closeMenu} className="text-lightGray hover:text-violet transition text-sm">{t('Contacto')}</Link>
           
           <div className="flex space-x-2">
             <button onClick={() => changeLanguage('en')} className="focus:outline-none">

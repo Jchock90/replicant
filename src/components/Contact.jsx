@@ -1,11 +1,16 @@
-// src/components/Contact.js
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
   const { t } = useTranslation();
   const form = useRef();
   const [messageSent, setMessageSent] = useState(false);
+
+  useEffect(() => {
+    const handleEsc = (e) => { if (e.key === 'Escape') setMessageSent(false); };
+    if (messageSent) document.addEventListener('keydown', handleEsc);
+    return () => document.removeEventListener('keydown', handleEsc);
+  }, [messageSent]);
 
   const sendEmail = async (e) => {
     e.preventDefault();

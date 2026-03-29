@@ -1,18 +1,10 @@
-// src/components/Home.js
-import React, { useState } from 'react';
+import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
   const { t } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState('');
-
-  const closeModal = () => {
-    setIsOpen(false);
-    setSelectedImage('');
-  };
 
   const customArrowStyles = `
     absolute top-1/2 transform -translate-y-1/2 z-10 cursor-pointer text-white text-xl p-2
@@ -146,20 +138,6 @@ const Home = () => {
           </div>
         </div>
       </Carousel>
-
-      {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-          <div className="relative">
-            <img src={selectedImage} alt="Selected" className="max-w-full max-h-full md:max-w-screen-sm md:max-h-screen-sm" />
-            <button
-              className="absolute top-0 right-0 mt-4 mr-4 text-white text-3xl bg-black bg-opacity-75 p-2 rounded-full"
-              onClick={closeModal}
-            >
-              &times;
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

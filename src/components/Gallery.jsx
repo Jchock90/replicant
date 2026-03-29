@@ -1,5 +1,4 @@
-// src/components/Gallery.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useTranslation } from 'react-i18next';
@@ -28,6 +27,18 @@ const Gallery = () => {
     setSelectedImage('');
     setSelectedDescription('');
   };
+
+  useEffect(() => {
+    const handleEsc = (e) => { if (e.key === 'Escape') closeModal(); };
+    if (isOpen) {
+      document.addEventListener('keydown', handleEsc);
+      document.body.style.overflow = 'hidden';
+    }
+    return () => {
+      document.removeEventListener('keydown', handleEsc);
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
 
   const customArrowStyles = `
     absolute top-1/2 transform -translate-y-1/2 z-10 cursor-pointer text-white text-xl bg-opacity-50 p-2
@@ -66,6 +77,7 @@ const Gallery = () => {
               height="315"
               src="https://www.youtube.com/embed/djx--zux3lM?si=92RWcbFtz1UeyZ8E"
               title="YouTube video player"
+              loading="lazy"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -79,6 +91,7 @@ const Gallery = () => {
               height="315"
               src="https://www.youtube.com/embed/jVIRP6DsL7Y"
               title="YouTube video player"
+              loading="lazy"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -92,6 +105,7 @@ const Gallery = () => {
               height="315"
               src="https://www.youtube.com/embed/CDIp1mrntOM"
               title="YouTube video player"
+              loading="lazy"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -105,6 +119,7 @@ const Gallery = () => {
               height="315"
               src="https://www.youtube.com/embed/noUZZ6DTvaE"
               title="YouTube video player"
+              loading="lazy"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
