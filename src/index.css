@@ -38,7 +38,7 @@ body::after {
 /* Typewriter cursor */
 .cursor {
   opacity: 1;
-  color: #7B61FF;
+  color: #E87ACC;
 }
 
 .cursor.blink {
@@ -52,13 +52,13 @@ body::after {
 
 /* Neon text glow */
 .neon-text {
-  text-shadow: 0 0 6px rgba(123, 97, 255, 0.3), 0 0 14px rgba(123, 97, 255, 0.15);
+  text-shadow: 0 0 6px rgba(232, 122, 204, 0.3), 0 0 14px rgba(232, 122, 204, 0.15);
 }
 
 /* Neon border glow */
 .neon-border {
-  border-color: #7B61FF;
-  box-shadow: 0 0 4px rgba(123, 97, 255, 0.15), inset 0 0 4px rgba(123, 97, 255, 0.05);
+  border-color: #E87ACC;
+  box-shadow: 0 0 4px rgba(232, 122, 204, 0.15), inset 0 0 4px rgba(232, 122, 204, 0.05);
 }
 
 /* Section titles */
@@ -66,15 +66,15 @@ body::after {
   font-size: 0.7rem;
   letter-spacing: 0.4em;
   text-transform: uppercase;
-  color: #7B61FF;
-  text-shadow: 0 0 8px rgba(123, 97, 255, 0.3);
+  color: #E87ACC;
+  text-shadow: 0 0 8px rgba(232, 122, 204, 0.3);
 }
 
 /* Cyber grid background */
 .cyber-grid {
   background-image:
-    linear-gradient(rgba(123, 97, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(123, 97, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(232, 122, 204, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 122, 204, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
 }
 
@@ -86,9 +86,9 @@ body::after {
   background: #0a0a0f;
 }
 ::-webkit-scrollbar-thumb {
-  background: #7B61FF;
+  background: #E87ACC;
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #9b85ff;
+  background: #f0a0dd;
 }

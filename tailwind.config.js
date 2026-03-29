@@ -11,7 +11,7 @@ module.exports = {
       },
       colors: {
         neon: {
-          violet: '#7B61FF',
+          pink: '#E87ACC',
           cyan: '#00f0ff',
         },
         dark: {
@@ -20,13 +20,13 @@ module.exports = {
           700: '#1a1a25',
           600: '#222230',
         },
-        violet: '#7B61FF',
+        pink: '#E87ACC',
         darkGray: '#1c1c1e',
         lightGray: '#d3d3d3',
       },
       boxShadow: {
-        'neon': '0 0 4px rgba(123, 97, 255, 0.2), 0 0 15px rgba(123, 97, 255, 0.12)',
-        'neon-violet': '0 0 4px rgba(123, 97, 255, 0.2), 0 0 15px rgba(123, 97, 255, 0.12)',
+        'neon': '0 0 4px rgba(232, 122, 204, 0.2), 0 0 15px rgba(232, 122, 204, 0.12)',
+        'neon-pink': '0 0 4px rgba(232, 122, 204, 0.2), 0 0 15px rgba(232, 122, 204, 0.12)',
       },
     },
   },
