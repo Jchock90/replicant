@@ -1,19 +1,30 @@
 import React from 'react';
-import { FaInstagram } from 'react-icons/fa'; 
+import { FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-darkGray bg-opacity-80 backdrop-blur-sm p-4 mt-8">
-      <div className="container mx-auto flex justify-between items-center text-lightGray">
-        <a href="https://www.instagram.com/flow_my.tears" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="text-gray-300 text-2xl" />
+    <footer className="border-t border-gray-800/50">
+      <div className="container mx-auto px-6 py-6 flex justify-between items-center">
+        <a
+          href="https://www.instagram.com/jesusemans"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-neon-cyan transition-colors duration-300"
+        >
+          <FaInstagram size={18} />
         </a>
-        <div className="text-center text-gray-300">
-        © {new Date().getFullYear()} <a className='hover:text-violet' href="https://github.com/Jchock90" target="_blank" rel="noopener noreferrer">Jesús Mansilla.</a>
-        </div>
-        <a href="https://linktr.ee/j3susm4nsill4" target="_blank" rel="noopener noreferrer">
-          <img src="/linktree.png" alt="Linktree logo" className="h-8" />
-        </a>
+        <p className="text-[10px] text-gray-600 tracking-widest">
+          © {new Date().getFullYear()}{' '}
+          <a
+            href="https://github.com/Jchock90"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-neon-cyan transition-colors"
+          >
+            JESÚS MANSILLA
+          </a>
+        </p>
+        <div className="w-[18px]" />
       </div>
     </footer>
   );
