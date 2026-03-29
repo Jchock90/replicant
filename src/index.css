@@ -52,13 +52,13 @@ body::after {
 
 /* Neon text glow */
 .neon-text {
-  text-shadow: 0 0 7px #7B61FF, 0 0 20px rgba(123, 97, 255, 0.4);
+  text-shadow: 0 0 6px rgba(123, 97, 255, 0.3), 0 0 14px rgba(123, 97, 255, 0.15);
 }
 
 /* Neon border glow */
 .neon-border {
   border-color: #7B61FF;
-  box-shadow: 0 0 5px rgba(123, 97, 255, 0.3), inset 0 0 5px rgba(123, 97, 255, 0.1);
+  box-shadow: 0 0 4px rgba(123, 97, 255, 0.15), inset 0 0 4px rgba(123, 97, 255, 0.05);
 }
 
 /* Section titles */
@@ -67,7 +67,7 @@ body::after {
   letter-spacing: 0.4em;
   text-transform: uppercase;
   color: #7B61FF;
-  text-shadow: 0 0 10px rgba(123, 97, 255, 0.5);
+  text-shadow: 0 0 8px rgba(123, 97, 255, 0.3);
 }
 
 /* Cyber grid background */

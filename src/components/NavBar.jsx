@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Typewriter from './Typewriter';
 import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
@@ -24,8 +23,8 @@ const Navbar = () => {
     <nav className="fixed w-full z-50 border-b border-neon-violet/20">
       <div className="absolute inset-0 bg-dark-900/80 backdrop-blur-md" />
       <div className="relative container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl md:text-3xl font-bold tracking-widest text-neon-violet neon-text">
-          <Typewriter />
+        <Link to="/" className="flex items-center">
+          <img src="/logo.png" alt="Replicant" className="h-8 md:h-10" />
         </Link>
 
         {/* Desktop */}
