@@ -4,22 +4,22 @@ import { useTranslation } from 'react-i18next';
 const tracks = [
   {
     title: 'Ciberdelia - Volumen 1',
-    src: 'https://bandcamp.com/EmbeddedPlayer/album=1489493561/size=large/bgcol=0a0a0f/linkcol=00f0ff/tracklist=false/track=620347450/transparent=true/',
+    src: 'https://bandcamp.com/EmbeddedPlayer/album=1489493561/size=large/bgcol=0a0a0f/linkcol=7B61FF/tracklist=false/track=620347450/transparent=true/',
     href: 'https://cphnkx.bandcamp.com/album/ciberdelia-volumen-1',
   },
   {
     title: 'Tender Softly Hardware',
-    src: 'https://bandcamp.com/EmbeddedPlayer/album=1018582991/size=large/bgcol=0a0a0f/linkcol=00f0ff/tracklist=false/transparent=true/',
+    src: 'https://bandcamp.com/EmbeddedPlayer/album=1018582991/size=large/bgcol=0a0a0f/linkcol=7B61FF/tracklist=false/transparent=true/',
     href: 'https://r3plic4nt.bandcamp.com/album/tender-softly-hardware',
   },
   {
     title: 'deeper',
-    src: 'https://bandcamp.com/EmbeddedPlayer/track=2707734680/size=large/bgcol=0a0a0f/linkcol=00f0ff/tracklist=false/transparent=true/',
+    src: 'https://bandcamp.com/EmbeddedPlayer/track=2707734680/size=large/bgcol=0a0a0f/linkcol=7B61FF/tracklist=false/transparent=true/',
     href: 'https://r3plic4nt.bandcamp.com/track/deeper',
   },
   {
     title: "it's a bad name",
-    src: 'https://bandcamp.com/EmbeddedPlayer/album=1298266587/size=large/bgcol=0a0a0f/linkcol=00f0ff/tracklist=false/transparent=true/',
+    src: 'https://bandcamp.com/EmbeddedPlayer/album=1298266587/size=large/bgcol=0a0a0f/linkcol=7B61FF/tracklist=false/transparent=true/',
     href: 'https://blipblop8bit.bandcamp.com/album/its-a-bad-name',
   },
 ];
@@ -35,7 +35,7 @@ const Home = () => {
           {tracks.map((track, i) => (
             <div
               key={i}
-              className="group bg-dark-800/30 border border-gray-800/50 hover:border-neon-cyan/30 rounded-lg overflow-hidden transition-all duration-500 hover:shadow-neon-cyan"
+              className="group bg-dark-800/30 border border-gray-800/50 hover:border-neon-violet/30 rounded-lg overflow-hidden transition-all duration-500 hover:shadow-neon-violet"
             >
               <iframe
                 title={track.title}

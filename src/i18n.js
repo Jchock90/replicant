@@ -7,7 +7,7 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         "Audio": "Audio",
-        "Soundtrack": "Soundtrack",
+        "Colaboraciones": "Collaborations",
         "Galería": "Gallery",
         "Contacto": "Contact",
         "Tu email": "Your email",
@@ -23,7 +23,7 @@ i18n.use(initReactI18next).init({
     es: {
       translation: {
         "Audio": "Audio",
-        "Soundtrack": "Soundtrack",
+        "Colaboraciones": "Colaboraciones",
         "Galería": "Galería",
         "Contacto": "Contacto",
         "Tu email": "Tu email",

@@ -7,7 +7,7 @@ const Soundtrack = () => {
   return (
     <div className="min-h-screen cyber-grid pt-28 pb-16 px-4">
       <div className="max-w-3xl mx-auto text-center">
-        <h1 className="section-title mb-4">{t('Soundtrack')}</h1>
+        <h1 className="section-title mb-4">{t('Colaboraciones')}</h1>
         <h2 className="text-2xl md:text-4xl font-bold text-white tracking-widest mb-8 neon-text">
           {t('CONSUME')}
         </h2>

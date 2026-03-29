@@ -49,20 +49,20 @@ const Contact = () => {
             type="email"
             name="email"
             placeholder={t('Tu email')}
-            className="w-full bg-dark-800/50 border border-gray-700/50 focus:border-neon-cyan rounded-lg px-4 py-3 text-sm text-gray-200 placeholder-gray-600 outline-none transition-all duration-300 focus:shadow-neon-cyan"
+            className="w-full bg-dark-800/50 border border-gray-700/50 focus:border-neon-violet rounded-lg px-4 py-3 text-sm text-gray-200 placeholder-gray-600 outline-none transition-all duration-300 focus:shadow-neon-violet"
             required
           />
           <textarea
             name="message"
             placeholder={t('Tu mensaje')}
             rows="5"
-            className="w-full bg-dark-800/50 border border-gray-700/50 focus:border-neon-cyan rounded-lg px-4 py-3 text-sm text-gray-200 placeholder-gray-600 outline-none transition-all duration-300 focus:shadow-neon-cyan resize-none"
+            className="w-full bg-dark-800/50 border border-gray-700/50 focus:border-neon-violet rounded-lg px-4 py-3 text-sm text-gray-200 placeholder-gray-600 outline-none transition-all duration-300 focus:shadow-neon-violet resize-none"
             required
           />
           <button
             type="submit"
             disabled={sending}
-            className="w-full py-3 text-xs tracking-[0.3em] uppercase border border-neon-cyan/60 text-neon-cyan rounded-lg hover:bg-neon-cyan/10 hover:shadow-neon-cyan transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full py-3 text-xs tracking-[0.3em] uppercase border border-neon-violet/60 text-neon-violet rounded-lg hover:bg-neon-violet/10 hover:shadow-neon-violet transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {sending ? '...' : t('Enviar')}
           </button>
@@ -75,15 +75,15 @@ const Contact = () => {
           onClick={() => setMessageSent(false)}
         >
           <div
-            className="bg-dark-800 border border-neon-cyan/30 rounded-lg p-8 max-w-sm w-full text-center shadow-neon-cyan"
+            className="bg-dark-800 border border-neon-violet/30 rounded-lg p-8 max-w-sm w-full text-center shadow-neon-violet"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="text-3xl text-neon-cyan mb-4">✓</div>
-            <h2 className="text-sm font-bold text-neon-cyan tracking-widest mb-2">{t('¡Mensaje Enviado!')}</h2>
+            <div className="text-3xl text-neon-violet mb-4">✓</div>
+            <h2 className="text-sm font-bold text-neon-violet tracking-widest mb-2">{t('¡Mensaje Enviado!')}</h2>
             <p className="text-xs text-gray-400 mb-6">{t('Tu mensaje ha sido enviado con éxito.')}</p>
             <button
               onClick={() => setMessageSent(false)}
-              className="px-6 py-2 text-xs tracking-[0.2em] uppercase border border-gray-600 text-gray-400 rounded hover:border-neon-cyan hover:text-neon-cyan transition-all"
+              className="px-6 py-2 text-xs tracking-[0.2em] uppercase border border-gray-600 text-gray-400 rounded hover:border-neon-violet hover:text-neon-violet transition-all"
             >
               {t('Cerrar')}
             </button>

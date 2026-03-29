@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const videos = [
-  { id: 'djx--zux3lM', title: 'Video 1' },
+  { id: 'CDIp1mrntOM', title: 'Video 1' },
   { id: 'jVIRP6DsL7Y', title: 'Video 2' },
-  { id: 'CDIp1mrntOM', title: 'Video 3' },
+  { id: 'djx--zux3lM', title: 'Video 3' },
   { id: 'noUZZ6DTvaE', title: 'Video 4' },
 ];
 
@@ -39,7 +39,7 @@ const Gallery = () => {
 
         {/* Video Section */}
         <div className="mb-16">
-          <div className="relative aspect-video max-w-3xl mx-auto rounded-lg overflow-hidden border border-gray-800 shadow-neon-cyan">
+          <div className="relative aspect-video max-w-3xl mx-auto rounded-lg overflow-hidden border border-gray-800 shadow-neon-violet">
             <iframe
               className="absolute inset-0 w-full h-full"
               src={`https://www.youtube.com/embed/${videos[activeVideo].id}`}
@@ -56,7 +56,7 @@ const Gallery = () => {
                 onClick={() => setActiveVideo(i)}
                 className={`h-1.5 rounded-full transition-all duration-300 ${
                   i === activeVideo
-                    ? 'bg-neon-cyan shadow-neon-cyan w-6'
+                    ? 'bg-neon-violet shadow-neon-violet w-6'
                     : 'bg-gray-700 hover:bg-gray-500 w-1.5'
                 }`}
                 aria-label={`Video ${i + 1}`}
@@ -71,7 +71,7 @@ const Gallery = () => {
             <div
               key={i}
               onClick={() => setSelectedImage(i)}
-              className="group relative aspect-square overflow-hidden rounded-lg border border-gray-800/50 hover:border-neon-cyan/30 cursor-pointer transition-all duration-500 hover:shadow-neon-cyan"
+              className="group relative aspect-square overflow-hidden rounded-lg border border-gray-800/50 hover:border-neon-violet/30 cursor-pointer transition-all duration-500 hover:shadow-neon-violet"
             >
               <img
                 src={image.src}
@@ -80,7 +80,7 @@ const Gallery = () => {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark-900/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-                <p className="text-[10px] text-neon-cyan tracking-wider leading-relaxed">{image.description}</p>
+                <p className="text-[10px] text-neon-violet tracking-wider leading-relaxed">{image.description}</p>
               </div>
             </div>
           ))}
@@ -99,12 +99,12 @@ const Gallery = () => {
               alt={images[selectedImage].alt}
               className="w-full max-h-[80vh] object-contain rounded-lg"
             />
-            <p className="text-center mt-4 text-xs text-neon-cyan tracking-widest">
+            <p className="text-center mt-4 text-xs text-neon-violet tracking-widest">
               {images[selectedImage].description}
             </p>
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center rounded-full border border-neon-cyan/30 bg-dark-900 text-neon-cyan hover:bg-neon-cyan hover:text-dark-900 transition-all text-sm"
+              className="absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center rounded-full border border-neon-violet/30 bg-dark-900 text-neon-violet hover:bg-neon-violet hover:text-dark-900 transition-all text-sm"
             >
               ✕
             </button>

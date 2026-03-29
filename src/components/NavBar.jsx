@@ -16,15 +16,15 @@ const Navbar = () => {
   const navLinks = [
     { to: '/', label: t('Galería') },
     { to: '/audio', label: t('Audio') },
-    { to: '/soundtrack', label: t('Soundtrack') },
+    { to: '/soundtrack', label: t('Colaboraciones') },
     { to: '/contact', label: t('Contacto') },
   ];
 
   return (
-    <nav className="fixed w-full z-50 border-b border-neon-cyan/20">
+    <nav className="fixed w-full z-50 border-b border-neon-violet/20">
       <div className="absolute inset-0 bg-dark-900/80 backdrop-blur-md" />
       <div className="relative container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold tracking-widest text-neon-cyan neon-text">
+        <Link to="/" className="text-xl font-bold tracking-widest text-neon-violet neon-text">
           <Typewriter />
         </Link>
 
@@ -36,8 +36,8 @@ const Navbar = () => {
               to={to}
               className={`text-xs tracking-[0.3em] uppercase transition-all duration-300 ${
                 isActive(to)
-                  ? 'text-neon-cyan neon-text'
-                  : 'text-gray-500 hover:text-neon-cyan'
+                  ? 'text-neon-violet neon-text'
+                  : 'text-gray-500 hover:text-neon-violet'
               }`}
             >
               {label}
@@ -47,7 +47,7 @@ const Navbar = () => {
             <button
               onClick={() => changeLanguage('en')}
               className={`text-xs tracking-wider transition-all ${
-                i18n.language === 'en' ? 'text-neon-cyan' : 'text-gray-600 hover:text-gray-400'
+                i18n.language === 'en' ? 'text-neon-violet' : 'text-gray-600 hover:text-gray-400'
               }`}
             >
               EN
@@ -56,7 +56,7 @@ const Navbar = () => {
             <button
               onClick={() => changeLanguage('es')}
               className={`text-xs tracking-wider transition-all ${
-                i18n.language === 'es' ? 'text-neon-cyan' : 'text-gray-600 hover:text-gray-400'
+                i18n.language === 'es' ? 'text-neon-violet' : 'text-gray-600 hover:text-gray-400'
               }`}
             >
               ES
@@ -67,7 +67,7 @@ const Navbar = () => {
         {/* Hamburger */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-400 hover:text-neon-cyan transition-colors"
+          className="md:hidden text-gray-400 hover:text-neon-violet transition-colors"
           aria-label="Toggle menu"
         >
           <div className="w-6 flex flex-col gap-1.5">
@@ -80,7 +80,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <div className={`md:hidden relative overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-64' : 'max-h-0'}`}>
-        <div className="bg-dark-900/95 backdrop-blur-md border-t border-neon-cyan/10 px-6 py-4 flex flex-col gap-4">
+        <div className="bg-dark-900/95 backdrop-blur-md border-t border-neon-violet/10 px-6 py-4 flex flex-col gap-4">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}
@@ -88,8 +88,8 @@ const Navbar = () => {
               onClick={closeMenu}
               className={`text-xs tracking-[0.3em] uppercase transition-all ${
                 isActive(to)
-                  ? 'text-neon-cyan neon-text'
-                  : 'text-gray-500 hover:text-neon-cyan'
+                  ? 'text-neon-violet neon-text'
+                  : 'text-gray-500 hover:text-neon-violet'
               }`}
             >
               {label}
@@ -98,14 +98,14 @@ const Navbar = () => {
           <div className="flex gap-3 pt-2 border-t border-gray-800">
             <button
               onClick={() => changeLanguage('en')}
-              className={`text-xs tracking-wider ${i18n.language === 'en' ? 'text-neon-cyan' : 'text-gray-600'}`}
+              className={`text-xs tracking-wider ${i18n.language === 'en' ? 'text-neon-violet' : 'text-gray-600'}`}
             >
               EN
             </button>
             <span className="text-gray-700">/</span>
             <button
               onClick={() => changeLanguage('es')}
-              className={`text-xs tracking-wider ${i18n.language === 'es' ? 'text-neon-cyan' : 'text-gray-600'}`}
+              className={`text-xs tracking-wider ${i18n.language === 'es' ? 'text-neon-violet' : 'text-gray-600'}`}
             >
               ES
             </button>

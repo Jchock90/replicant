@@ -9,7 +9,7 @@ const Footer = () => {
           href="https://www.instagram.com/jesusemans"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-600 hover:text-neon-cyan transition-colors duration-300"
+          className="text-gray-600 hover:text-neon-violet transition-colors duration-300"
         >
           <FaInstagram size={18} />
         </a>
@@ -19,7 +19,7 @@ const Footer = () => {
             href="https://github.com/Jchock90"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-neon-cyan transition-colors"
+            className="hover:text-neon-violet transition-colors"
           >
             JESÚS MANSILLA
           </a>
