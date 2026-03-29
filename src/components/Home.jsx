@@ -35,11 +35,11 @@ const Home = () => {
           {tracks.map((track, i) => (
             <div
               key={i}
-              className="group bg-dark-800/30 border border-gray-800/50 hover:border-neon-violet/30 rounded-lg overflow-hidden transition-all duration-500 hover:shadow-neon-violet"
+              className="group bg-dark-800/30 border border-gray-800/50 hover:border-neon-violet/30 rounded-lg overflow-hidden transition-all duration-500 hover:shadow-neon-violet aspect-square"
             >
               <iframe
                 title={track.title}
-                style={{ border: 0, width: '100%', height: '350px' }}
+                style={{ border: 0, width: '100%', height: '100%' }}
                 src={track.src}
                 seamless
                 loading="lazy"
