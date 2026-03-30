@@ -29,7 +29,8 @@ i18n.use(initReactI18next).init({
         "prensa_2": "Sounds from deep within the digital city",
         "podcast_1": "AnacroGames Tape 16 — VGMs & local chiptune",
         "remix_1": "Viamo (Replicant Remix) — Dork Collective",
-        "canal_1": "Replicant on YouTube"
+        "canal_1": "Replicant on YouTube",
+        "Entrar": "Enter"
       }
     },
     es: {
@@ -57,7 +58,8 @@ i18n.use(initReactI18next).init({
         "prensa_2": "Sonidos desde lo profundo de la urbe digital",
         "podcast_1": "AnacroGames Tape 16 — VGMs y chiptune local",
         "remix_1": "Viamo (Replicant Remix) — Dork Collective",
-        "canal_1": "Replicant en YouTube"
+        "canal_1": "Replicant en YouTube",
+        "Entrar": "Entrar"
       }
     }
   },
