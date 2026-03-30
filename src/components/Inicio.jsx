@@ -37,7 +37,7 @@ const images = [
 const Arrow = ({ direction, onClick }) => (
   <button
     onClick={onClick}
-    className="text-neon-pink hover:text-white transition-colors text-3xl md:text-4xl leading-none px-2"
+    className="text-neon-pink hover:text-white transition-colors text-4xl md:text-5xl leading-none px-3 md:px-5 flex-shrink-0"
     aria-label={direction === 'prev' ? 'Previous' : 'Next'}
   >
     {direction === 'prev' ? '‹' : '›'}
@@ -121,9 +121,9 @@ const Inicio = () => {
 
           {/* Video Carousel */}
           <div className="mb-16">
-            <div className="flex items-center gap-3 max-w-3xl mx-auto">
+            <div className="flex items-center justify-center">
               <Arrow direction="prev" onClick={prevVideo} />
-              <div className="flex-1 relative aspect-video overflow-hidden border border-gray-800 shadow-neon-pink">
+              <div className="max-w-3xl w-full relative aspect-video overflow-hidden border border-gray-800 shadow-neon-pink">
                 <iframe
                   className="absolute inset-0 w-full h-full"
                   src={`https://www.youtube.com/embed/${videos[activeVideo].id}`}
@@ -152,7 +152,7 @@ const Inicio = () => {
           </div>
 
           {/* Photos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4">
             {images.map((image, i) => (
               <div
                 key={i}
