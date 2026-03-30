@@ -6,6 +6,7 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        "Inicio": "Home",
         "Audio": "Audio",
         "Colaboraciones": "Collaborations",
         "Galería": "Gallery",
@@ -35,6 +36,7 @@ i18n.use(initReactI18next).init({
     },
     es: {
       translation: {
+        "Inicio": "Inicio",
         "Audio": "Audio",
         "Colaboraciones": "Colaboraciones",
         "Galería": "Galería",

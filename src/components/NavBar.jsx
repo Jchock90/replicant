@@ -13,9 +13,7 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   const navLinks = [
-    { to: '/', label: t('Galería') },
-    { to: '/audio', label: t('Audio') },
-    { to: '/soundtrack', label: t('Colaboraciones') },
+    { to: '/', label: t('Inicio') },
     { to: '/about', label: t('Sobre') },
     { to: '/contact', label: t('Contacto') },
   ];
