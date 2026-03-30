@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/replicant/static/css/main.b5784b84.css",
+    "main.js": "/replicant/static/js/main.3db4b351.js",
+    "static/js/453.2bca4068.chunk.js": "/replicant/static/js/453.2bca4068.chunk.js",
+    "static/media/robot.jpg": "/replicant/static/media/robot.a688663fb36b00e7c5ee.jpg",
+    "index.html": "/replicant/index.html",
+    "main.b5784b84.css.map": "/replicant/static/css/main.b5784b84.css.map",
+    "main.3db4b351.js.map": "/replicant/static/js/main.3db4b351.js.map",
+    "453.2bca4068.chunk.js.map": "/replicant/static/js/453.2bca4068.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5784b84.css",
+    "static/js/main.3db4b351.js"
+  ]
+}
