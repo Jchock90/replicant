@@ -2,7 +2,6 @@
   "name": "Jesús Mansilla",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jchock90.github.io/replicant",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -24,9 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -48,7 +45,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.6"
   }
