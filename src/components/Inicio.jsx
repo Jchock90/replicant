@@ -28,7 +28,6 @@ const videos = [
 ];
 
 const images = [
-  { src: '/R3PLIC4NT-3_solido2.png', alt: 'R3PLIC4NT', description: 'R3PLIC4NT — pixel art' },
   { src: '/foto2.jpg', alt: 'Live set', description: '02>10>2022 // Flash>Party — El Maquinal, CABA' },
   { src: '/foto1.jpg', alt: 'Live performance', description: '04>08>18 // blipblop>party>zombie>edition — Espacio Cultural Mi Casa, CABA' },
   { src: '/foto3.jpg', alt: 'Stage', description: '01>04>2017 // blipblop>vs>nave — Espacio Cultural Mi Casa, CABA' },
@@ -89,6 +88,20 @@ const Inicio = () => {
   return (
     <div className="min-h-screen cyber-grid pt-12 pb-16 px-4">
       <div className="max-w-5xl mx-auto">
+
+        {/* ── R3PLIC4NT ── */}
+        <section className="mb-20">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="overflow-hidden border border-gray-800/50 hover:border-neon-pink/30 transition-all duration-500 hover:shadow-neon-pink">
+              <img
+                src="/R3PLIC4NT-3_solido2.png"
+                alt="R3PLIC4NT"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <p className="mt-6 text-xs md:text-sm text-gray-400 leading-relaxed">R3PLIC4NT por VULPXL</p>
+          </div>
+        </section>
 
         {/* ── Audio ── */}
         <section className="mb-20">
@@ -167,23 +180,11 @@ const Inicio = () => {
           </div>
 
           {/* Photos Grid */}
-          <div className="max-w-3xl mx-auto">
-            <div
-              className="mb-4 w-full overflow-hidden border border-gray-800/50 hover:border-neon-pink/30 cursor-pointer transition-all duration-500 hover:shadow-neon-pink"
-              onClick={() => setSelectedImage(0)}
-            >
-              <img
-                src="/R3PLIC4NT-3_solido2.png"
-                alt="R3PLIC4NT"
-                className="w-full h-auto object-contain"
-                loading="lazy"
-              />
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {images.slice(1).map((image, i) => (
+          <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {images.map((image, i) => (
               <div
                 key={i}
-                onClick={() => setSelectedImage(i + 1)}
+                onClick={() => setSelectedImage(i)}
                 className="group relative aspect-square overflow-hidden border border-gray-800/50 hover:border-neon-pink/30 cursor-pointer transition-all duration-500 hover:shadow-neon-pink"
               >
                 <img
@@ -194,7 +195,6 @@ const Inicio = () => {
                 />
               </div>
             ))}
-            </div>
           </div>
         </section>
 
