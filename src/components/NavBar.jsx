@@ -71,7 +71,7 @@ const Navbar = () => {
         {/* Hamburger */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-400 hover:text-neon-pink transition-colors"
+          className="md:hidden text-neon-pink transition-colors"
           aria-label="Toggle menu"
         >
           <div className="w-6 flex flex-col gap-1.5">
