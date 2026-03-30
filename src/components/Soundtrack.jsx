@@ -21,6 +21,9 @@ const Soundtrack = () => {
             allowFullScreen
           />
         </div>
+        <p className="mt-6 text-xs md:text-sm text-gray-400 leading-relaxed max-w-xl mx-auto">
+          {t('consume_desc')}
+        </p>
       </div>
     </div>
   );
