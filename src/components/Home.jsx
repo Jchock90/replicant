@@ -34,9 +34,9 @@ const Home = () => {
 
   return (
     <div className="min-h-screen cyber-grid pt-28 pb-16 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <h1 className="section-title text-center mb-12">{t('Audio')}</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {tracks.map((track, i) => (
             <div
               key={i}
