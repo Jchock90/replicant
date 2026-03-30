@@ -22,9 +22,6 @@ function App() {
 
   return (
     <Router>
-      {/* Rain layers for Blade Runner effect */}
-      <div className="rain-layer-2" />
-      <div className="rain-layer-3" />
       {showSplash && <Splash onEnter={handleEnter} />}
       <div className="flex flex-col min-h-screen">
         <NavBar />
