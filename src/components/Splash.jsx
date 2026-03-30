@@ -59,6 +59,10 @@ const Splash = ({ onEnter }) => {
             alt="Replicant"
             className="splash-logo neon-logo w-[70vw] md:w-[45vw] lg:w-[35vw] max-w-[600px]"
           />
+          <img src="/logo.png" alt="" className="glitch-copy glitch-copy-1" aria-hidden="true" />
+          <img src="/logo.png" alt="" className="glitch-copy glitch-copy-2" aria-hidden="true" />
+          <img src="/logo.png" alt="" className="glitch-copy glitch-copy-3" aria-hidden="true" />
+          <img src="/logo.png" alt="" className="glitch-copy glitch-copy-4" aria-hidden="true" />
         </div>
 
         {/* Enter button */}
