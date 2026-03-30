@@ -4,8 +4,9 @@ import { useTranslation } from 'react-i18next';
 const videos = [
   { id: 'CDIp1mrntOM', title: 'Video 1' },
   { id: 'jVIRP6DsL7Y', title: 'Video 2' },
-  { id: 'djx--zux3lM', title: 'Video 3' },
-  { id: 'noUZZ6DTvaE', title: 'Video 4' },
+  { id: '295JSFEC5I8', title: 'Video 3' },
+  { id: 'djx--zux3lM', title: 'Video 4' },
+  { id: 'noUZZ6DTvaE', title: 'Video 5' },
 ];
 
 const images = [

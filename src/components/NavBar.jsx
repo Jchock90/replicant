@@ -16,6 +16,7 @@ const Navbar = () => {
     { to: '/', label: t('Galería') },
     { to: '/audio', label: t('Audio') },
     { to: '/soundtrack', label: t('Colaboraciones') },
+    { to: '/about', label: t('Sobre') },
     { to: '/contact', label: t('Contacto') },
   ];
 
@@ -24,7 +25,7 @@ const Navbar = () => {
       <div className="absolute inset-0 bg-dark-900/80 backdrop-blur-md" />
       <div className="relative container mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <img src="/logo.png" alt="Replicant" className="h-8 md:h-10" />
+          <img src="/logo.png" alt="Replicant" className="h-8 md:h-10 neon-logo" />
         </Link>
 
         {/* Desktop */}

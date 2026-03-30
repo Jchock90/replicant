@@ -50,6 +50,15 @@ body::after {
   50% { opacity: 0; }
 }
 
+/* Neon logo glow */
+.neon-logo {
+  filter: drop-shadow(0 0 6px rgba(232, 122, 204, 0.4)) drop-shadow(0 0 20px rgba(232, 122, 204, 0.2));
+  transition: filter 0.4s ease;
+}
+.neon-logo:hover {
+  filter: drop-shadow(0 0 8px rgba(232, 122, 204, 0.6)) drop-shadow(0 0 28px rgba(232, 122, 204, 0.35));
+}
+
 /* Neon text glow */
 .neon-text {
   text-shadow: 0 0 6px rgba(232, 122, 204, 0.3), 0 0 14px rgba(232, 122, 204, 0.15);

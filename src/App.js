@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Soundtrack from './components/Soundtrack';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import About from './components/About';
 import './index.css'; 
 
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Gallery />} />
             <Route path="/audio" element={<Home />} />
             <Route path="/soundtrack" element={<Soundtrack />} />
+            <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
