@@ -28,7 +28,7 @@ const videos = [
 ];
 
 const images = [
-  { src: '/foto2.jpg', alt: 'Live set', description: '01>04>2017 // blipblop>vs>nave — Espacio Cultural Mi Casa, CABA' },
+  { src: '/foto2.jpg', alt: 'Live set', description: '02>10>2022 // Flash>Party — El Maquinal, CABA' },
   { src: '/foto1.jpg', alt: 'Live performance', description: '04>08>18 // blipblop>party>zombie>edition — Espacio Cultural Mi Casa, CABA' },
   { src: '/foto3.jpg', alt: 'Stage', description: '01>04>2017 // blipblop>vs>nave — Espacio Cultural Mi Casa, CABA' },
   { src: '/foto4.jpg', alt: 'Festival', description: '16>06>2019 // blipblop>party>cyber>punk>fest — Complejo Hook, Paraná' },
