@@ -83,7 +83,7 @@ const Inicio = () => {
         {/* ── R3PLIC4NT ── */}
         <section className="mb-20">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="overflow-hidden border border-gray-800/50 hover:border-neon-pink/30 transition-all duration-500 hover:shadow-neon-pink">
+            <div className="overflow-hidden border border-gray-800 shadow-neon-pink transition-all duration-500 hover:border-neon-pink/30">
               <img
                 src="/R3PLIC4NT-3_solido2.png"
                 alt="R3PLIC4NT"
