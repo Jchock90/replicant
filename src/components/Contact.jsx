@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen cyber-grid pt-28 pb-16 px-4">
+    <div className="min-h-screen cyber-grid pt-12 pb-16 px-4">
       <div className="max-w-lg mx-auto">
         <h1 className="section-title text-center mb-12">{t('Contacto')}</h1>
 

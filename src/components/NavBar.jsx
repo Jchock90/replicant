@@ -19,7 +19,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-50 border-b border-neon-pink/20">
+    <nav className="w-full z-50 border-b border-neon-pink/20">
       <div className="absolute inset-0 bg-dark-900/80 backdrop-blur-md" />
       <div className="relative container mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center">

@@ -76,7 +76,7 @@ const Inicio = () => {
   }, [selectedImage, prevImage, nextImage]);
 
   return (
-    <div className="min-h-screen cyber-grid pt-28 pb-16 px-4">
+    <div className="min-h-screen cyber-grid pt-12 pb-16 px-4">
       <div className="max-w-5xl mx-auto">
 
         {/* ── Audio ── */}

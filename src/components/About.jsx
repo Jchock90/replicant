@@ -27,7 +27,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen cyber-grid pt-28 pb-16 px-4">
+    <div className="min-h-screen cyber-grid pt-12 pb-16 px-4">
       <div className="max-w-3xl mx-auto">
         <h1 className="section-title text-center mb-12">{t('Sobre')}</h1>
 
