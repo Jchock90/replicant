@@ -140,11 +140,9 @@ const Inicio = () => {
               <Arrow direction="prev" onClick={prevVideo} />
               <div
                 className="max-w-3xl w-full relative aspect-video overflow-hidden border border-gray-800 shadow-neon-pink"
-                onTouchStart={handleTouchStart}
-                onTouchEnd={handleTouchEnd}
               >
                 <iframe
-                  className="absolute inset-0 w-full h-full pointer-events-none md:pointer-events-auto"
+                  className="absolute inset-0 w-full h-full"
                   src={`https://www.youtube.com/embed/${videos[activeVideo].id}`}
                   title={videos[activeVideo].title}
                   loading="lazy"
