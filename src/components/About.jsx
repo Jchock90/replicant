@@ -7,6 +7,7 @@ const links = [
     items: [
       { label: 'prensa_1', url: 'https://170escalones.com/musica-reciclada/', source: '170 Escalones' },
       { label: 'prensa_2', url: 'https://170escalones.com/sonidos-desde-lo-profundo-de-la-urbe-digital/', source: '170 Escalones' },
+      { label: 'IMDb', url: 'https://www.imdb.com/es/name/nm11611741/', source: 'IMDb' },
     ],
   },
   {
