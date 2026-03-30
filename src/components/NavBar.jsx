@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <nav className="w-full z-50 border-b border-neon-pink/20">
       <div className="absolute inset-0 bg-dark-900/80 backdrop-blur-md" />
-      <div className="relative container mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="relative container mx-auto px-6 py-2 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <div className="glitch-logo-nav relative">
             <img src="/logo.png" alt="Replicant" className="h-8 md:h-10 neon-logo" />
