@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen cyber-grid pt-12 pb-16 px-4">
-      <div className="max-w-lg mx-auto">
+      <div className="max-w-3xl mx-auto">
         <h1 className="section-title text-center mb-12">{t('Contacto')}</h1>
 
         <form ref={form} onSubmit={sendEmail} className="space-y-6">
