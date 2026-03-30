@@ -25,8 +25,8 @@ module.exports = {
         lightGray: '#d3d3d3',
       },
       boxShadow: {
-        'neon': '0 0 4px rgba(232, 122, 204, 0.2), 0 0 15px rgba(232, 122, 204, 0.12)',
-        'neon-pink': '0 0 4px rgba(232, 122, 204, 0.2), 0 0 15px rgba(232, 122, 204, 0.12)',
+        'neon': '0 0 3px rgba(232, 122, 204, 0.1), 0 0 8px rgba(232, 122, 204, 0.06)',
+        'neon-pink': '0 0 3px rgba(232, 122, 204, 0.1), 0 0 8px rgba(232, 122, 204, 0.06)',
       },
     },
   },
