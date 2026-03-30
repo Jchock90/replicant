@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const tracks = [
@@ -37,7 +37,7 @@ const images = [
 const Arrow = ({ direction, onClick }) => (
   <button
     onClick={onClick}
-    className="text-neon-pink hover:text-white transition-colors text-4xl md:text-5xl leading-none px-3 md:px-5 flex-shrink-0"
+    className="hidden md:flex text-neon-pink hover:text-white transition-colors text-4xl md:text-5xl leading-none px-3 md:px-5 flex-shrink-0 items-center"
     aria-label={direction === 'prev' ? 'Previous' : 'Next'}
   >
     {direction === 'prev' ? '‹' : '›'}
@@ -51,6 +51,16 @@ const Inicio = () => {
 
   const prevVideo = () => setActiveVideo((p) => (p - 1 + videos.length) % videos.length);
   const nextVideo = () => setActiveVideo((p) => (p + 1) % videos.length);
+
+  const touchStart = useRef(null);
+  const handleTouchStart = (e) => { touchStart.current = e.touches[0].clientX; };
+  const handleTouchEnd = (e) => {
+    if (touchStart.current === null) return;
+    const diff = touchStart.current - e.changedTouches[0].clientX;
+    if (diff > 50) nextVideo();
+    else if (diff < -50) prevVideo();
+    touchStart.current = null;
+  };
 
   const prevImage = useCallback(() => {
     setSelectedImage((p) => (p - 1 + images.length) % images.length);
@@ -123,9 +133,13 @@ const Inicio = () => {
           <div className="mb-16">
             <div className="flex items-center justify-center">
               <Arrow direction="prev" onClick={prevVideo} />
-              <div className="max-w-3xl w-full relative aspect-video overflow-hidden border border-gray-800 shadow-neon-pink">
+              <div
+                className="max-w-3xl w-full relative aspect-video overflow-hidden border border-gray-800 shadow-neon-pink"
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+              >
                 <iframe
-                  className="absolute inset-0 w-full h-full"
+                  className="absolute inset-0 w-full h-full pointer-events-none md:pointer-events-auto"
                   src={`https://www.youtube.com/embed/${videos[activeVideo].id}`}
                   title={videos[activeVideo].title}
                   loading="lazy"
