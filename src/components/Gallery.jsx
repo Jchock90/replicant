@@ -121,7 +121,7 @@ const Gallery = () => {
         >
           <button
             onClick={(e) => { e.stopPropagation(); prevImage(); }}
-            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full border border-neon-pink/30 bg-dark-900/80 text-neon-pink hover:bg-neon-pink hover:text-dark-900 transition-all text-lg backdrop-blur-sm z-10"
+            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-neon-pink hover:text-white transition-colors text-3xl md:text-4xl leading-none px-2 z-10"
             aria-label="Previous photo"
           >
             ‹
@@ -144,7 +144,7 @@ const Gallery = () => {
           </div>
           <button
             onClick={(e) => { e.stopPropagation(); nextImage(); }}
-            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full border border-neon-pink/30 bg-dark-900/80 text-neon-pink hover:bg-neon-pink hover:text-dark-900 transition-all text-lg backdrop-blur-sm z-10"
+            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-neon-pink hover:text-white transition-colors text-3xl md:text-4xl leading-none px-2 z-10"
             aria-label="Next photo"
           >
             ›
