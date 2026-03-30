@@ -3,29 +3,19 @@ import { useTranslation } from 'react-i18next';
 
 const tracks = [
   {
+    title: 'voic3.of.natur3',
+    src: 'https://bandcamp.com/EmbeddedPlayer/track=4194806735/size=large/bgcol=0a0a0f/linkcol=E87ACC/tracklist=false/transparent=true/',
+    href: 'https://r3plic4nt.bandcamp.com/track/voic3-of-natur3',
+  },
+  {
     title: 'Ciberdelia - Volumen 1',
     src: 'https://bandcamp.com/EmbeddedPlayer/album=1489493561/size=large/bgcol=0a0a0f/linkcol=E87ACC/tracklist=false/track=620347450/transparent=true/',
     href: 'https://cphnkx.bandcamp.com/album/ciberdelia-volumen-1',
   },
   {
-    title: 'Tender Softly Hardware',
-    src: 'https://bandcamp.com/EmbeddedPlayer/album=1018582991/size=large/bgcol=0a0a0f/linkcol=E87ACC/tracklist=false/transparent=true/',
-    href: 'https://r3plic4nt.bandcamp.com/album/tender-softly-hardware',
-  },
-  {
     title: 'deeper',
     src: 'https://bandcamp.com/EmbeddedPlayer/track=2707734680/size=large/bgcol=0a0a0f/linkcol=E87ACC/tracklist=false/transparent=true/',
     href: 'https://r3plic4nt.bandcamp.com/track/deeper',
-  },
-  {
-    title: "it's a bad name",
-    src: 'https://bandcamp.com/EmbeddedPlayer/album=1298266587/size=large/bgcol=0a0a0f/linkcol=E87ACC/tracklist=false/transparent=true/',
-    href: 'https://blipblop8bit.bandcamp.com/album/its-a-bad-name',
-  },
-  {
-    title: 'voic3.of.natur3',
-    src: 'https://bandcamp.com/EmbeddedPlayer/track=4194806735/size=large/bgcol=0a0a0f/linkcol=E87ACC/tracklist=false/transparent=true/',
-    href: 'https://r3plic4nt.bandcamp.com/track/voic3-of-natur3',
   },
 ];
 
@@ -92,7 +82,7 @@ const Inicio = () => {
         {/* ── Audio ── */}
         <section className="mb-20">
           <h2 className="section-title text-center mb-12">{t('Audio')}</h2>
-          <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4">
             {tracks.map((track, i) => (
               <div
                 key={i}
@@ -109,6 +99,18 @@ const Inicio = () => {
                 </iframe>
               </div>
             ))}
+            <a
+              href="https://r3plic4nt.bandcamp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center bg-dark-800/30 border border-gray-800/50 hover:border-neon-pink/30 overflow-hidden transition-all duration-500 hover:shadow-neon-pink aspect-square"
+            >
+              <img
+                src="/bandcamp-logotype-color-32.png"
+                alt="Bandcamp"
+                className="w-2/3 opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+              />
+            </a>
           </div>
         </section>
 
