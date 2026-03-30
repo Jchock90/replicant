@@ -41,14 +41,14 @@ const Splash = ({ onEnter }) => {
         backgroundSize: '50px 50px'
       }} />
 
-      {/* Floating particles */}
-      <div className="absolute inset-0 pointer-events-none splash-particles" />
+      {/* Falling particles */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden splash-particles" />
 
-      {/* Neon horizontal lines */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="splash-line splash-line-1" />
-        <div className="splash-line splash-line-2" />
-      </div>
+      {/* Neon scan line */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden splash-scan" />
+
+      {/* Glitch flicker overlay */}
+      <div className="absolute inset-0 pointer-events-none splash-flicker" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center gap-10">
