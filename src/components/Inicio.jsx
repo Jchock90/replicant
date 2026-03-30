@@ -90,7 +90,7 @@ const Inicio = () => {
                 className="w-full h-auto object-contain"
               />
             </div>
-            <p className="mt-6 text-xs md:text-sm text-gray-400 leading-relaxed">R3PLIC4NT por VULPXL</p>
+            <p className="mt-6 text-xs md:text-sm text-gray-400 leading-relaxed">R3PLIC4NT por <a href="https://www.instagram.com/vulpixl" target="_blank" rel="noopener noreferrer" className="text-neon-pink hover:underline">VULPIXL</a></p>
           </div>
         </section>
 
