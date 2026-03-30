@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="relative container mx-auto px-6 py-2 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <div className="glitch-logo-nav relative">
-            <img src="/logo.png" alt="Replicant" className="h-8 md:h-10 neon-logo" />
+            <img src="/logo.png" alt="Replicant" className="h-6 md:h-7 neon-logo" />
             <img src="/logo.png" alt="" className="glitch-nav-copy glitch-nav-1" aria-hidden="true" />
             <img src="/logo.png" alt="" className="glitch-nav-copy glitch-nav-2" aria-hidden="true" />
             <img src="/logo.png" alt="" className="glitch-nav-copy glitch-nav-3" aria-hidden="true" />
