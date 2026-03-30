@@ -12,11 +12,20 @@ html, body {
 
 body {
   font-family: 'Orbitron', sans-serif;
+  background: #0a0a0f;
+  color: #d3d3d3;
+}
+
+/* Fixed background image — avoids resize on mobile scroll */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
   background:
     linear-gradient(rgba(10, 10, 15, 0.84), rgba(10, 10, 15, 0.88)),
-    url('../public/robot.jpg') no-repeat center center fixed;
+    url('../public/robot.jpg') no-repeat center center;
   background-size: cover;
-  color: #d3d3d3;
+  z-index: -1;
 }
 
 /* Scanlines overlay */
