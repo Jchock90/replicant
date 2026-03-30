@@ -49,20 +49,20 @@ const Contact = () => {
             type="email"
             name="email"
             placeholder={t('Tu email')}
-            className="w-full bg-dark-800/50 border border-gray-700/50 focus:border-neon-pink rounded-lg px-4 py-3 text-sm text-gray-200 placeholder-gray-600 outline-none transition-all duration-300 focus:shadow-neon-pink"
+            className="w-full bg-dark-800/50 border border-gray-700/50 focus:border-neon-pink px-4 py-3 text-sm text-gray-200 placeholder-gray-600 outline-none transition-all duration-300 focus:shadow-neon-pink"
             required
           />
           <textarea
             name="message"
             placeholder={t('Tu mensaje')}
             rows="5"
-            className="w-full bg-dark-800/50 border border-gray-700/50 focus:border-neon-pink rounded-lg px-4 py-3 text-sm text-gray-200 placeholder-gray-600 outline-none transition-all duration-300 focus:shadow-neon-pink resize-none"
+            className="w-full bg-dark-800/50 border border-gray-700/50 focus:border-neon-pink px-4 py-3 text-sm text-gray-200 placeholder-gray-600 outline-none transition-all duration-300 focus:shadow-neon-pink resize-none"
             required
           />
           <button
             type="submit"
             disabled={sending}
-            className="w-full py-3 text-xs tracking-[0.3em] uppercase border border-neon-pink/60 text-neon-pink rounded-lg hover:bg-neon-pink/10 hover:shadow-neon-pink transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full py-3 text-xs tracking-[0.3em] uppercase border border-neon-pink/60 text-neon-pink hover:bg-neon-pink/10 hover:shadow-neon-pink transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {sending ? '...' : t('Enviar')}
           </button>
@@ -75,7 +75,7 @@ const Contact = () => {
           onClick={() => setMessageSent(false)}
         >
           <div
-            className="bg-dark-800 border border-neon-pink/30 rounded-lg p-8 max-w-sm w-full text-center shadow-neon-pink"
+            className="bg-dark-800 border border-neon-pink/30 p-8 max-w-sm w-full text-center shadow-neon-pink"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="text-3xl text-neon-pink mb-4">✓</div>

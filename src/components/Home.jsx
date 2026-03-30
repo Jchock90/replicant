@@ -40,7 +40,7 @@ const Home = () => {
           {tracks.map((track, i) => (
             <div
               key={i}
-              className="group bg-dark-800/30 border border-gray-800/50 hover:border-neon-pink/30 rounded-lg overflow-hidden transition-all duration-500 hover:shadow-neon-pink aspect-square"
+              className="group bg-dark-800/30 border border-gray-800/50 hover:border-neon-pink/30 overflow-hidden transition-all duration-500 hover:shadow-neon-pink aspect-square"
             >
               <iframe
                 title={track.title}

@@ -59,7 +59,7 @@ const About = () => {
                     href={url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center justify-between bg-dark-800/30 border border-gray-800/50 hover:border-neon-pink/30 rounded-lg px-4 py-3 transition-all duration-300 hover:shadow-neon-pink"
+                    className="group flex items-center justify-between bg-dark-800/30 border border-gray-800/50 hover:border-neon-pink/30 px-4 py-3 transition-all duration-300 hover:shadow-neon-pink"
                   >
                     <span className="text-xs text-gray-300 group-hover:text-neon-pink transition-colors">
                       {t(label)}

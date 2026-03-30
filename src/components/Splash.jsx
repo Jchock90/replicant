@@ -62,7 +62,7 @@ const Splash = ({ onEnter }) => {
         {/* Enter button */}
         <button
           onClick={handleEnter}
-          className="splash-btn px-10 py-3 text-xs tracking-[0.4em] uppercase border border-neon-pink/40 text-neon-pink rounded-lg hover:bg-neon-pink/10 transition-all duration-500"
+          className="splash-btn px-10 py-3 text-xs tracking-[0.4em] uppercase border border-neon-pink/40 text-neon-pink hover:bg-neon-pink/10 transition-all duration-500"
         >
           {t('Entrar')}
         </button>

@@ -66,7 +66,7 @@ const Gallery = () => {
         <div className="mb-16">
           <div className="flex items-center gap-3 max-w-3xl mx-auto">
             <Arrow direction="prev" onClick={prevVideo} />
-            <div className="flex-1 relative aspect-video rounded-lg overflow-hidden border border-gray-800 shadow-neon-pink">
+            <div className="flex-1 relative aspect-video overflow-hidden border border-gray-800 shadow-neon-pink">
               <iframe
                 className="absolute inset-0 w-full h-full"
                 src={`https://www.youtube.com/embed/${videos[activeVideo].id}`}
@@ -83,7 +83,7 @@ const Gallery = () => {
               <button
                 key={i}
                 onClick={() => setActiveVideo(i)}
-                className={`h-1.5 rounded-full transition-all duration-300 ${
+                className={`h-1.5 transition-all duration-300 ${
                   i === activeVideo
                     ? 'bg-neon-pink shadow-neon-pink w-6'
                     : 'bg-gray-700 hover:bg-gray-500 w-1.5'
@@ -100,7 +100,7 @@ const Gallery = () => {
             <div
               key={i}
               onClick={() => setSelectedImage(i)}
-              className="group relative aspect-square overflow-hidden rounded-lg border border-gray-800/50 hover:border-neon-pink/30 cursor-pointer transition-all duration-500 hover:shadow-neon-pink"
+              className="group relative aspect-square overflow-hidden border border-gray-800/50 hover:border-neon-pink/30 cursor-pointer transition-all duration-500 hover:shadow-neon-pink"
             >
               <img
                 src={image.src}
@@ -130,14 +130,14 @@ const Gallery = () => {
             <img
               src={images[selectedImage].src}
               alt={images[selectedImage].alt}
-              className="w-full max-h-[80vh] object-contain rounded-lg"
+              className="w-full max-h-[80vh] object-contain"
             />
             <p className="text-center mt-4 text-xs text-neon-pink tracking-widest">
               {images[selectedImage].description}
             </p>
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center rounded-full border border-neon-pink/30 bg-dark-900 text-neon-pink hover:bg-neon-pink hover:text-dark-900 transition-all text-sm"
+              className="absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center border border-neon-pink/30 bg-dark-900 text-neon-pink hover:bg-neon-pink hover:text-dark-900 transition-all text-sm"
             >
               ✕
             </button>

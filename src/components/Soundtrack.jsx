@@ -11,7 +11,7 @@ const Soundtrack = () => {
         <h2 className="text-2xl md:text-4xl font-bold text-white tracking-widest mb-8 neon-text">
           {t('CONSUME')}
         </h2>
-        <div className="relative aspect-video rounded-lg overflow-hidden border border-gray-800 shadow-neon-pink">
+        <div className="relative aspect-video overflow-hidden border border-gray-800 shadow-neon-pink">
           <iframe
             className="absolute inset-0 w-full h-full"
             src="https://www.youtube.com/embed/krlgGyioDCE"
