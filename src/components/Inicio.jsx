@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const tracks = [
@@ -62,19 +62,10 @@ const Inicio = () => {
     touchStart.current = null;
   };
 
-  const prevImage = useCallback(() => {
-    setSelectedImage((p) => (p - 1 + images.length) % images.length);
-  }, []);
-  const nextImage = useCallback(() => {
-    setSelectedImage((p) => (p + 1) % images.length);
-  }, []);
-
   useEffect(() => {
     if (selectedImage !== null) {
       const handleKey = (e) => {
         if (e.key === 'Escape') setSelectedImage(null);
-        if (e.key === 'ArrowLeft') prevImage();
-        if (e.key === 'ArrowRight') nextImage();
       };
       document.addEventListener('keydown', handleKey);
       document.body.style.overflow = 'hidden';
@@ -83,7 +74,7 @@ const Inicio = () => {
         document.body.style.overflow = '';
       };
     }
-  }, [selectedImage, prevImage, nextImage]);
+  }, [selectedImage]);
 
   return (
     <div className="min-h-screen cyber-grid pt-12 pb-16 px-4">
@@ -222,42 +213,39 @@ const Inicio = () => {
         </section>
       </div>
 
-      {/* Lightbox */}
+      {/* Lightbox — vertical scroll */}
       {selectedImage !== null && (
         <div
-          className="fixed inset-0 bg-dark-900/95 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-dark-900/95 backdrop-blur-sm z-50"
           onClick={() => setSelectedImage(null)}
         >
           <button
-            onClick={(e) => { e.stopPropagation(); prevImage(); }}
-            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-neon-pink hover:text-white transition-colors text-3xl md:text-4xl leading-none px-2 z-10"
-            aria-label="Previous photo"
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center border border-neon-pink/30 bg-dark-900 text-neon-pink hover:bg-neon-pink hover:text-dark-900 transition-all text-sm z-10"
           >
-            ‹
+            ✕
           </button>
-          <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
-            <img
-              src={images[selectedImage].src}
-              alt={images[selectedImage].alt}
-              className="w-full max-h-[80vh] object-contain"
-            />
-            <p className="text-center mt-4 text-xs text-neon-pink tracking-widest">
-              {images[selectedImage].description}
-            </p>
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center border border-neon-pink/30 bg-dark-900 text-neon-pink hover:bg-neon-pink hover:text-dark-900 transition-all text-sm"
-            >
-              ✕
-            </button>
+          <div
+            className="h-full overflow-y-auto snap-y snap-mandatory py-[10vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {images.map((image, i) => (
+              <div
+                key={i}
+                className="snap-start flex flex-col items-center justify-center px-4 pb-[15vh]"
+                ref={i === selectedImage ? (el) => el?.scrollIntoView({ block: 'start' }) : undefined}
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="max-w-full max-h-[75vh] object-contain"
+                />
+                <p className="text-center mt-4 text-xs text-neon-pink tracking-widest">
+                  {image.description}
+                </p>
+              </div>
+            ))}
           </div>
-          <button
-            onClick={(e) => { e.stopPropagation(); nextImage(); }}
-            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-neon-pink hover:text-white transition-colors text-3xl md:text-4xl leading-none px-2 z-10"
-            aria-label="Next photo"
-          >
-            ›
-          </button>
         </div>
       )}
     </div>
