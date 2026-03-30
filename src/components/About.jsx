@@ -16,12 +16,6 @@ const links = [
     ],
   },
   {
-    category: 'Remix',
-    items: [
-      { label: 'remix_1', url: 'https://dorkcollective.bandcamp.com/track/viamo-replicant-remix', source: 'Bandcamp' },
-    ],
-  },
-  {
     category: 'Canal',
     items: [
       { label: 'canal_1', url: 'https://www.youtube.com/@r3plic4nt', source: 'YouTube' },

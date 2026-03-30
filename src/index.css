@@ -101,3 +101,61 @@ body::after {
 ::-webkit-scrollbar-thumb:hover {
   background: #f0a0dd;
 }
+
+/* ═══ Ambient visual effects ═══ */
+
+/* Floating particles */
+.cyber-grid::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, rgba(232, 122, 204, 0.25) 50%, transparent 50%),
+    radial-gradient(1px 1px at 80% 10%, rgba(232, 122, 204, 0.2) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 30% 70%, rgba(232, 122, 204, 0.15) 50%, transparent 50%),
+    radial-gradient(1px 1px at 65% 85%, rgba(232, 122, 204, 0.2) 50%, transparent 50%),
+    radial-gradient(1px 1px at 90% 50%, rgba(232, 122, 204, 0.18) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 15% 90%, rgba(232, 122, 204, 0.12) 50%, transparent 50%),
+    radial-gradient(1px 1px at 50% 40%, rgba(232, 122, 204, 0.2) 50%, transparent 50%);
+  animation: drift 20s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes drift {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100vh); }
+}
+
+/* Neon horizontal line */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 40%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(232, 122, 204, 0.4), transparent);
+  animation: neon-scan 8s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 9998;
+}
+
+@keyframes neon-scan {
+  0% { left: -40%; top: 15%; }
+  50% { left: 100%; top: 75%; }
+  100% { left: -40%; top: 15%; }
+}
+
+/* Subtle glitch flicker on scanlines */
+body::after {
+  animation: scanline-flicker 4s steps(1) infinite;
+}
+
+@keyframes scanline-flicker {
+  0%, 94% { opacity: 1; }
+  95% { opacity: 0.6; }
+  96% { opacity: 1; }
+  97% { opacity: 0.8; }
+  98%, 100% { opacity: 1; }
+}
