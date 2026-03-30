@@ -103,7 +103,8 @@ const Inicio = () => {
               href="https://r3plic4nt.bandcamp.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center bg-dark-800/30 border border-gray-800/50 hover:border-neon-pink/30 overflow-hidden transition-all duration-500 hover:shadow-neon-pink aspect-square"
+              className="group flex items-center justify-center border border-gray-800/50 hover:border-neon-pink/30 overflow-hidden transition-all duration-500 hover:shadow-neon-pink aspect-square"
+              style={{ backgroundColor: 'rgba(10, 10, 15, 0.8)' }}
             >
               <img
                 src="/bandcamp-logotype-light-512.png"
