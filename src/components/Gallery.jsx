@@ -19,7 +19,7 @@ const images = [
 const Arrow = ({ direction, onClick }) => (
   <button
     onClick={onClick}
-    className="w-9 h-9 flex items-center justify-center rounded-full border border-neon-pink/30 bg-dark-900/80 text-neon-pink hover:bg-neon-pink hover:text-dark-900 transition-all text-sm backdrop-blur-sm"
+    className="text-neon-pink hover:text-white transition-colors text-3xl md:text-4xl leading-none px-2"
     aria-label={direction === 'prev' ? 'Previous' : 'Next'}
   >
     {direction === 'prev' ? '‹' : '›'}
