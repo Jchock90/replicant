@@ -53,11 +53,13 @@ const Splash = ({ onEnter }) => {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center gap-10">
         {/* Logo */}
-        <img
-          src="/logo.png"
-          alt="Replicant"
-          className="splash-logo neon-logo w-[70vw] md:w-[45vw] lg:w-[35vw] max-w-[600px]"
-        />
+        <div className="glitch-logo">
+          <img
+            src="/logo.png"
+            alt="Replicant"
+            className="splash-logo neon-logo w-[70vw] md:w-[45vw] lg:w-[35vw] max-w-[600px]"
+          />
+        </div>
 
         {/* Enter button */}
         <button
